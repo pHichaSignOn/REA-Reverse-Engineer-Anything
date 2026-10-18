@@ -1,0 +1,37 @@
+ติดตั้ง REA Agents (rea-main) ครั้งแรก
+
+1. เข้า Project
+	cd D:\REA-Agents\rea-main
+
+2. ติดตั้ง Package
+	npm ci
+	npm install
+
+3. ตรวจสอบ Dependency ติดตั้งครบหรือไม่
+	npm run deps:check
+
+4. Build Runtime ใช้คำสั่งนี้เป็นหลัก
+	npm run build:cached
+
+ถ้า Build ผ่านแล้วค่อย ใช้สร้าง metadata / skill artifacts เพิ่มเติม
+	npm run build
+
+5. ดู Scripts ที่มี แค่ดูรายการ Scripts
+	npm run
+
+ตั้งค่า REA Agents
+เรียก Setup Wizard
+
+	npx rea-agents setup
+		เลือก VS Code
+
+	npm start	
+		D:\REA-Agents\rea-main>npm start
+		> rea-agents@6.5.0 start
+		> node scripts/rea.mjs mcp
+
+		แสดงว่า REA กำลังเริ่ม MCP Server
+
+https://github.com/morluto/rea/
+https://ollama.com/
+https://nodejs.org/
